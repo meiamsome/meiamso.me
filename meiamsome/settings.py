@@ -52,6 +52,9 @@ ROOT_URLCONF = 'meiamsome.urls'
 
 WSGI_APPLICATION = 'meiamsome.wsgi.application'
 
+# Website Template Files
+TEMPLATE_DIRS = (os.path.join(os.path.join(BASE_DIR, 'meiamsome'), 'templates'), )
+STATICFILES_DIRS = (os.path.join(os.path.join(BASE_DIR, 'meiamsome'), 'static'), )
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

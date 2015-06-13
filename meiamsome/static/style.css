@@ -1,0 +1,111 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    padding-top: 70px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 60px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-image: linear-gradient(rgba(221,221,221,0) 0%, #DDD 5px), linear-gradient(to right, #DDD 5%, #C207DB, #DDD 95%);
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+}
+
+.list-group h1,.list-group h2,.list-group h3,.list-group h4,.list-group h5,.list-group h6 {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar {
+    background-color: #000;
+    border-color: #C207DB;
+    border-width: 0 0 8px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #FFF;
+    transition: 0.5s ease-in;
+    transition-property: color, background-color;
+}
+
+
+.navbar .active a {
+    border-color: #C207DB;
+    border-width: 0 4px;
+    border-style: solid;
+}
+.navbar li:hover > a, .navbar li a:focus, .navbar .dropdown.open > a {
+    transition: 0.1s ease-in;
+    background-color: #C207DB;
+}
+@media(max-width: 767px) {
+    .navbar .active a:before {
+        padding-left: 10px;
+    }
+}
+@media(min-width: 768px) {
+    .navbar .active a {
+        background-color: #FFF;
+        padding-bottom: 23px;
+        margin-bottom: -8px;
+        color: #000;
+    }
+}
+
+.navbar-toggle {
+    border-color: #888;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+a.fa {
+    color: #000;
+}
+
+a.fa:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a.fa span {
+    display: none;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+#home a.fa:before {
+    font-size: 90px;
+    padding: 0.1em;
+    border: 2px solid #000;
+    border-radius: 50% 0;
+    width: 1.15em;
+    display: inline-block;
+    transition: 0.5s ease-in;
+    transition-property: color, border-color;
+}
+#home a.fa:hover:before {
+    border-color: #C207DB;
+    color: #C207DB;
+    transition: 0.1s ease-in;
+}
+#home a.fa:nth-child(2n+1):before {
+    border-radius: 0 50%;
+}
